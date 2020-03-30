@@ -22,7 +22,7 @@ MODEL_ROOT = os.path.join(BASE_DIR, 'models')
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = ')0rl@g#@uv+*c#lw14=ek1o1un7%f+86n$%t6kkz$*h2$xzr-('
+SECRET_KEY = os.environ.get('SECRET_KEY3')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
