@@ -1,0 +1,1 @@
+### A REST API developed using DjangoRestFramework which acts as an interface between OnlineHealthCare Application to return JSON Response indicating whether a persons Heart is Healthy or Unhealthy.
