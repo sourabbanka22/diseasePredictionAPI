@@ -29,7 +29,8 @@ DEBUG = False
 
 
 ALLOWED_HOSTS = [
-    'sourab-diseasepredictionapi.herokuapp.com'
+    'localhost:3000',
+    'sourab-onlinehealthcare.herokuapp.com'
 ]
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
@@ -56,6 +57,13 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
+
+CORS_ORIGIN_WHITELIST = (
+    'http://localhost:3000',
+    'http://localhost:4200',
+    'http://localhost:8000',
+    'https://sourab-onlinehealthcare.herokuapp.com',
+)
 
 ROOT_URLCONF = 'MLBackend.urls'
 
